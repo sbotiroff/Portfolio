@@ -1,0 +1,20 @@
+.SideBar {
+    writing-mode:vertical-rl;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: block;
+    width: 65px;
+    background-color: #FFFFFF;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .SideBar {
+        width:100%;
+        writing-mode: initial;
+        height: auto;
+        position: relative;
+    }
+}

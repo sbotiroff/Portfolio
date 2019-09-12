@@ -1,0 +1,48 @@
+.PageBody {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    background-color: #F8F9FA;
+    z-index: 1;
+}
+
+.PageBody header {
+    padding: 50px;
+    text-align: left;
+}
+
+.PageBody header h1 {
+    color: #242424;
+    font-size: 68px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.PageBody header p {
+    color: #878787;
+    margin: 0;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.PageBodyContainer {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+}
+
+.PageBodyContents>div{
+    border-top: 1px dotted rgb(139, 139, 139);
+    padding-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 160px;
+}
+
+@media screen and (max-width: 1000px) {
+    .PageBody {
+        width:100%;
+    }
+}

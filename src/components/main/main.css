@@ -1,0 +1,12 @@
+.Main {
+    margin-left: 65px;
+    margin-right: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .Main {
+        margin: 0;
+    }
+}
