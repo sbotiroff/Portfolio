@@ -4,12 +4,18 @@
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
+    "react-animated-css": "^1.2.1",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.1.1",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-scrollbar": "^0.5.6",
     "react-scrollspy": "^3.4.0",
-    "react-skillbars": "^1.5.1"
+    "react-skillbars": "^1.5.1",
+    "react-update-url-on-scroll": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

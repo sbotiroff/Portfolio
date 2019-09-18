@@ -1,25 +1,34 @@
 import React from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Scrollspy from 'react-scrollspy'
+import { withRouter } from 'react-router-dom';
 
 import './nav.css';
 
-function nav(props){
+class Nav extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-    return (
-        <nav className = "Nav" >
-            <ul className = {props.isFixed?"fixedNav":""}>
-            <Scrollspy items={ ['aboutme', 'experience', 'skills', 'projects', 'contactme' ] } currentClassName="is-current">
-    
-                <li> <a href="#aboutme">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contactme">Contact me</a></li>
-            </Scrollspy>
-            </ul>
-        </nav>
-    );
+    handleRouteChange = (someThing) => {
+        this.props.history.push("/"+someThing.id)
+    }
+
+    render() {
+        return (
+            <nav className="Nav" >
+                <ul className={this.props.isFixed ? "fixedNav" : ""}>
+                    <Scrollspy items={['about-me', 'experience', 'skills', 'projects', 'contact-me']} currentClassName="is-current" onUpdate = {this.handleRouteChange}>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact-me">Contact me</a></li>
+                    </Scrollspy>
+                </ul>
+            </nav>
+        );
+    }
+
 }
 
-export default nav;
+export default withRouter(Nav);

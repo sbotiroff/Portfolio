@@ -3,8 +3,9 @@
     flex-direction: column;
     position: relative;
     width: 60%;
-    background-color: #F8F9FA;
+    background-color: #0D0D0D;
     z-index: 1;
+    padding: 80px;
 }
 
 .PageBody header {
@@ -13,7 +14,7 @@
 }
 
 .PageBody header h1 {
-    color: #242424;
+    color: #FFFFFF;
     font-size: 68px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -33,16 +34,23 @@
     display: flex;
 }
 
-.PageBodyContents>div{
+.PageBodyContents>div {
     border-top: 1px dotted rgb(139, 139, 139);
     padding-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-bottom: 160px;
+    min-height: 300px;
 }
 
-@media screen and (max-width: 1000px) {
+.PageBodyContents>div p,
+li {
+    color: #A5A5A5;
+}
+
+
+@media screen and (max-width: 1200px) {
     .PageBody {
-        width:100%;
+        width: 100%;
     }
 }

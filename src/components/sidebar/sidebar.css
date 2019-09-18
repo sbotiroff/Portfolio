@@ -1,20 +1,43 @@
 .SideBar {
-    writing-mode:vertical-rl;
+    writing-mode: vertical-rl;
     height: 100vh;
     position: fixed;
     left: 0px;
     bottom: 0px;
-    display: block;
+    display: flex;
     width: 65px;
-    background-color: #FFFFFF;
-    
+    background-color: #141414;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
 }
 
-@media screen and (max-width: 1000px) {
+.SideBar span {
+    color: white;
+    font-size: 30px;
+}
+
+.SideBar-icons a {
+    font-size: 15pt;
+    padding: 10px;
+    color: #ffffffc2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.SideBar-icons a:hover {
+    color: #4264c0;
+}
+
+@media screen and (max-width: 1200px) {
     .SideBar {
-        width:100%;
+        width: 100%;
         writing-mode: initial;
-        height: auto;
-        position: relative;
+        height: 65px;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

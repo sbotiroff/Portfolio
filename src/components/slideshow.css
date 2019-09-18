@@ -1,14 +1,45 @@
-.SlideShow{
+.SlideShow {
     position: fixed;
     right: 65px;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.658);
-}
-
-.SlideShow img{
     min-height: 100vh;
+    background-size: cover;
 }
 
-@media screen and (max-width: 1000px) {
-    .SlideShow{display: none;}
+
+.SlideShow-title {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+
+.SlideShow-title p {
+    color: #ffffffe5;
+    transform: rotate(-90deg);
+    font-size: 6vw;
+    position: absolute;
+    width: 100%;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    left: 40%;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+    .SlideShow {
+        display: none;
+    }
+}
+
+@keyframes slideToLeft {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+        background-color: blue;
+    }
 }

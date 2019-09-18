@@ -1,10 +1,18 @@
 import React from 'react';
+import { FaDownload } from 'react-icons/fa'
+
+import Resume from '../../assets/Sardor-Botirov-resume.pdf'
+
 import './sidebar.css';
 
-function sideBar(){
+
+function sideBar() {
     return (
-        <div className = "SideBar">
-            <h1>SideBar</h1>
+        <div className="SideBar">
+            <span>SB</span>
+            <div className="SideBar-icons">
+                <a href={Resume}>Resume | | <FaDownload size={'35px'}></FaDownload></a>
+            </div>
         </div>
     );
 }

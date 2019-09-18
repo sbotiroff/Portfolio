@@ -14,7 +14,7 @@
 
 .Nav li a {
     text-decoration: none;
-    color: #3b3b3b;
+    color: #B6B6B6;
 }
 
 .Nav ul {
@@ -28,12 +28,12 @@
     animation-timing-function: linear;
     position: fixed;
     top: 100px;
-    left: 85px;
+    left: 165px;
 }
 
-.is-current {
-    border: 1px solid gray;
-    color: #ffffff;
+.is-current a {
+    display: block;
+    color: aliceblue !important;
 }
 
 @keyframes navAnimation {
@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .Nav {
         display: none;
     }
