@@ -17,11 +17,11 @@ function pageBody(props) {
                 <div className="PageBodyContainer">
                     <Nav isFixed={props.isFixed} />
                     <div className = "PageBodyContents">
-                        <AboutMe header="aboutme" />
-                        <Experience header="experience" />
-                        <Skills header = "Skills"/>
-                        <Projects header="projects" />        
-                        <ContactMe header="contactme" />  
+                        <AboutMe />
+                        <Experience/>
+                        <Skills/>
+                        <Projects/>        
+                        <ContactMe/>  
                     </div>
 
                 </div>

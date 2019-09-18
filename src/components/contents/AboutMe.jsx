@@ -2,7 +2,7 @@ import React from 'react';
 
 const aboutMe = () => {
     return (
-        <div id="aboutme">
+        <div id="about-me">
             <h2>About Me</h2>
             <p>
                 Hello my name is Sardor Botirov. I am a Web developer. As a web developer focused on 
