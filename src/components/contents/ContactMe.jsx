@@ -1,15 +1,25 @@
-import React from 'react';
+import React from "react";
+import "./ContactMe.css";
 
 const contactMe = () => {
-    return (
-        <div id='contact-me'>
-            <h2>Contact me</h2>
-            <p>
-                This is an email link:
-                <a href="mailto:sardor.botiroff@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a>
-            </p>
+  return (
+    <div id="contact-me" className="ContactMe">
+      <h2>Contact Me</h2>
+      <form
+        action="mailto:sardor.botiroff@gmail.com"
+        method="GET"
+        target="_blank"
+        className="ContactMeForm"
+      >
+        <h3>Start Email To Sardor.Botiroff@gmail.com</h3>
+        <input type="subject" placeholder="Subject..." />
+        <textarea name="body" placeholder="Message..."></textarea>
+        <div>
+          <button type="submit">Send Email</button>
         </div>
-    );
-}
+      </form>
+    </div>
+  );
+};
 
 export default contactMe;

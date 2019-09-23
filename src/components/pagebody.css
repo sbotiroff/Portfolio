@@ -1,56 +1,89 @@
 .PageBody {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 60%;
-    background-color: #0D0D0D;
-    z-index: 1;
-    padding: 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60%;
+  background-color: #0d0d0d;
+  z-index: 1;
+  padding: 40px;
 }
 
 .PageBody header {
-    padding: 50px;
-    text-align: left;
+  min-width: 520px;
+  padding: 50px;
+  text-align: left;
 }
 
 .PageBody header h1 {
-    color: #FFFFFF;
-    font-size: 68px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin: 0;
+  color: #ffffff;
+  font-size: 68px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0;
 }
 
 .PageBody header p {
-    color: #878787;
-    margin: 0;
-    font-size: 36px;
-    padding-bottom: 10px;
+  color: #878787;
+  margin: 0;
+  font-size: 36px;
+  padding-bottom: 10px;
 }
 
 .PageBodyContainer {
-    margin-top: 50px;
-    padding: 10px;
-    display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
 }
 
-.PageBodyContents>div {
-    border-top: 1px dotted rgb(139, 139, 139);
-    padding-top: 80px;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 160px;
-    min-height: 300px;
+.PageBodyContents > div {
+  border-top: 1px dotted rgb(139, 139, 139);
+  padding: 80px 3em 80px 3em;
+  min-height: 500px;
 }
 
-.PageBodyContents>div p,
+.PageBodyContents > div p,
 li {
-    color: #A5A5A5;
+  color: #a5a5a5;
 }
-
 
 @media screen and (max-width: 1200px) {
-    .PageBody {
-        width: 100%;
-    }
+  .PageBody {
+    width: 100%;
+    padding: 0;
+  }
+
+  .PageBodyContents > div {
+    padding: 80px 10px 80px 10px;
+    margin: 50px;
+  }
+
+  .PageBody header {
+    width: 100%;
+    background: url("../assets/header.jpg");
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PageBody header h1 {
+    color: #ffffff;
+    text-shadow: 5px 5px 10px black;
+  }
+
+  .PageBody header p {
+    color: #dddddd;
+    text-shadow: 5px 5px 10px black;
+  }
+
+  .PageBodyContents > div:first-child {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: auto;
+  }
 }
