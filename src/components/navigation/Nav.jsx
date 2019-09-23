@@ -9,15 +9,17 @@ class Nav extends React.Component {
         super(props);
     }
 
-    handleRouteChange = (someThing) => {
-        this.props.history.push("/"+someThing.id)
+    handleRouteChange = component => {
+        if (component) {
+            this.props.history.push("/" + component.id)
+        }
     }
 
     render() {
         return (
             <nav className="Nav" >
                 <ul className={this.props.isFixed ? "fixedNav" : ""}>
-                    <Scrollspy items={['about-me', 'experience', 'skills', 'projects', 'contact-me']} currentClassName="is-current" onUpdate = {this.handleRouteChange}>
+                    <Scrollspy items={['about-me', 'experience', 'skills', 'projects', 'contact-me']} currentClassName="is-current" onUpdate={this.handleRouteChange} offset={-300}>
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
@@ -25,7 +27,7 @@ class Nav extends React.Component {
                         <li><a href="#contact-me">Contact me</a></li>
                     </Scrollspy>
                 </ul>
-            </nav>
+            </nav >
         );
     }
 

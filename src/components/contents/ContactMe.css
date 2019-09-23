@@ -1,0 +1,49 @@
+.ContactMeForm {
+  margin-top: 30px;
+  width: 100%;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactMeForm h3 {
+  font-size: 15pt;
+  color: #e6e6e6 !important;
+}
+
+.ContactMeForm p {
+  font-size: 20pt;
+  color: #e6e6e6 !important;
+}
+
+.ContactMeForm input,
+textarea {
+  background-color: #0d0d0d;
+  border: none;
+  border-bottom: 2px solid #a71111;
+  width: 100%;
+  height: 40px;
+  font-size: 18pt;
+  color: #969696;
+  outline: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ContactMeForm button {
+  box-shadow: 0 1px 3px #c7c7c7;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  color: #cfcccc;
+  font-size: 14pt;
+  border: black;
+  background-color: #a71111;
+  width: 130px;
+  height: 50px;
+}
+
+.ContactMeForm button:hover {
+  box-shadow: 1px 2px 5px #c7c7c7;
+}

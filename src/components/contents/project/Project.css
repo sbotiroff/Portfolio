@@ -1,0 +1,27 @@
+.Project {
+  width: 12em;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.ProjectCircle {
+  cursor: pointer;
+  height: 6em;
+  width: 6em;
+  border: 2px solid white;
+  background-size: cover;
+  border-radius: 3em;
+}
+
+.ProjectName {
+  color: #ffffff !important;
+}
+
+.Project > p a {
+  color: #a32a2a;
+}

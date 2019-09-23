@@ -9,7 +9,7 @@ import './sidebar.css';
 function sideBar() {
     return (
         <div className="SideBar">
-            <span>SB</span>
+            <a href="/"></a>
             <div className="SideBar-icons">
                 <a href={Resume}>Resume | | <FaDownload size={'35px'}></FaDownload></a>
             </div>

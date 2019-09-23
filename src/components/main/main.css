@@ -3,10 +3,12 @@
     margin-right: 65px;
     display: flex;
     justify-content: space-between;
+    background-color: #0D0D0D;
 }
 
 @media screen and (max-width: 1200px) {
     .Main {
         margin: 0;
     }
+
 }

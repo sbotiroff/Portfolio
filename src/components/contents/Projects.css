@@ -1,0 +1,17 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.ProjectsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Projects > a {
+  color: white;
+}
